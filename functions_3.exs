@@ -10,7 +10,7 @@ fizz_buzz = fn
 end
 
 fizz_buzz2 = fn n ->
-  fizz_buzz.(rem(n, 3), rem(n, 3), n)
+  fizz_buzz.(rem(n, 3), rem(n, 5), n)
 end
 
 IO.puts fizz_buzz2.(10)
