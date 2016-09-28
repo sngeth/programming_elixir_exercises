@@ -20,4 +20,3 @@ IO.puts fizz_buzz2.(13)
 IO.puts fizz_buzz2.(14)
 IO.puts fizz_buzz2.(15)
 IO.puts fizz_buzz2.(16)
-
