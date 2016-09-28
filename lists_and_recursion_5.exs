@@ -7,4 +7,11 @@ defmodule MyList do
   def all?([head | tail], func) do
     if func.(head), do: all?(tail, func), else: false
   end
+
+
+  def each([head | tail], func) do
+    func.(head)
+    each(tail, func)
+  end
+  def each([], _func), do: :ok
 end
