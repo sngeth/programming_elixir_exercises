@@ -14,4 +14,13 @@ defmodule MyList do
     each(tail, func)
   end
   def each([], _func), do: :ok
+
+  def filter([head | tail], func) do
+    if func.(head) == true do
+      [ head | filter(tail, func) ]
+    else
+      filter(tail, func)
+    end
+  end
+  def filter([], _func), do: []
 end
