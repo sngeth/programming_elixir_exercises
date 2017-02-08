@@ -28,3 +28,8 @@ end
 Process.flag(:trap_exit, true)
 spawn_link(Link, :child, [self, :error])
 Link.parent
+
+# "hello"
+# {:EXIT, #PID<0.123.0>, :error}
+# No more messages
+# [Link]
